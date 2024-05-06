@@ -7,7 +7,8 @@ def load_data():
 
 def main():
     iface = gr.Interface(fn=load_data, inputs=[], outputs="html", title="Display DataFrame")
-    iface.launch()
+    # Launch with explicit settings to listen on all interfaces and use port 7860
+    iface.launch(server_name='0.0.0.0', server_port=7860)
 
 if __name__ == "__main__":
     main()

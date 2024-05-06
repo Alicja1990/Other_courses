@@ -27,4 +27,6 @@ docker logs alicjas_container
 docker build -t first_python_docker:1.0 .
 docker run -p 7860:7860 -d first_python_docker:1.0
 
+docker scan first_python_docker:1.0 # scanning for security vulnerabilities
+
 
