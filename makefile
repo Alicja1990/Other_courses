@@ -7,7 +7,6 @@ install:
 format:
 	find src -name '*.py' -exec black {} +
 lint:
-    find src -name "*.py" | xargs pylint --disable=R,C
-
+	find src -name "*.py" | xargs pylint --disable=R,C
 test:
 	python -m pytest -vv test
