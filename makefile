@@ -1,6 +1,5 @@
 run:
 	python src/my_pyspark.py
-
 install:
 	pip install --upgrade pip&&\
 		pip install -r requirements.txt
