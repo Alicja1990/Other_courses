@@ -1,9 +1,9 @@
 from pyspark.sql import SparkSession
 from pyspark.ml.feature import Imputer
 
-print(SparkSession._instantiatedSession)
-if SparkSession._instantiatedSession is not None:
-    SparkSession._instantiatedSession.stop()
+#print(SparkSession._instantiatedSession)
+#if SparkSession._instantiatedSession is not None:
+#    SparkSession._instantiatedSession.stop()
 
 spark = SparkSession.builder.appName("Practise").getOrCreate()
 df = spark.read.csv("pyspark_data.csv")
