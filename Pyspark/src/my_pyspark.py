@@ -1,5 +1,3 @@
-import pandas
-import pyspark
 from pyspark.sql import SparkSession
 from pyspark.ml.feature import Imputer
 
