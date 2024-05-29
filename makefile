@@ -6,7 +6,7 @@ install:
 		pip install -r requirements.txt
 
 format:
-	find src -name '*.py' -exec black {} +
+	find Pyspark/src -name '*.py' -exec black {} +
 
 lint:
 	find Pyspark/src -name "*.py" | xargs pylint --disable=R,C
